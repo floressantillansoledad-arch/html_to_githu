@@ -1,0 +1,103 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Médico</title>
+</head>
+<body style="font-family: Arial, sans-serif;">
+
+    <font size="5" color="#003366">
+        <h2 align="center">Formulario de Registro Médico</h2>
+    </font>
+
+    <form>
+        <table border="1" cellpadding="5" cellspacing="0" align="center" width="80%">
+            <!-- Datos Personales -->
+            <tr bgcolor="#f2f2f2"><td colspan="4"><b><font size="3">I. Datos Personales</font></b></td></tr>
+            <tr>
+                <td>Nombre(s):</td>
+                <td><input type="text" name="nombre" required></td>
+                <td>Apellido Paterno:</td>
+                <td><input type="text" name="apaterno" required></td>
+            </tr>
+            <tr>
+                <td>Apellido Materno:</td>
+                <td><input type="text" name="amaterno"></td>
+                <td>Edad:</td>
+                <td><input type="number" name="edad" min="0" max="120" style="width: 50px;"></td>
+            </tr>
+            <tr>
+                <td>CURP:</td>
+                <td><input type="text" name="curp" maxlength="18"></td>
+                <td>Nacionalidad:</td>
+                <td><input type="text" name="nacionalidad"></td>
+            </tr>
+            <tr>
+                <td>Localidad:</td>
+                <td><input type="text" name="localidad"></td>
+                <td>Género:</td>
+                <td>
+                    <input type="radio" name="genero" value="m"> M
+                    <input type="radio" name="genero" value="f"> F
+                </td>
+            </tr>
+            <tr>
+                <td>Religión:</td>
+                <td><input type="text" name="religion"></td>
+                <td>Celular:</td>
+                <td><input type="tel" name="celular"></td>
+            </tr>
+            <tr>
+                <td>N&uacute;m. Seguro Social:</td>
+                <td><input type="text" name="nss"></td>
+                <td>Tipo de Sangre:</td>
+                <td>
+                    <select name="sangre">
+                        <option value="o+">O+</option>
+                        <option value="o-">O-</option>
+                        <option value="a+">A+</option>
+                        <option value="a-">A-</option>
+                        <option value="b+">B+</option>
+                        <option value="b-">B-</option>
+                        <option value="ab+">AB+</option>
+                        <option value="ab-">AB-</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Detalles Médicos -->
+            <tr bgcolor="#f2f2f2"><td colspan="4"><b><font size="3">II. Detalles Médicos</font></b></td></tr>
+            <tr>
+                <td>Fecha de Ingreso:</td>
+                <td><input type="date" name="fecha_ingreso"></td>
+                <td>Motivo de consulta:</td>
+                <td><input type="text" name="motivo"></td>
+            </tr>
+            <tr>
+                <td>Alergias:</td>
+                <td colspan="3">
+                    <textarea name="alergias" rows="2" cols="50" placeholder="Especifique alergias..."></textarea>
+                </td>
+            </tr>
+
+            <!-- Signos Vitales -->
+            <tr bgcolor="#f2f2f2"><td colspan="4"><b><font size="3">III. Signos Vitales</font></b></td></tr>
+            <tr>
+                <td>Peso (kg):</td>
+                <td><input type="number" name="peso" step="0.1" style="width: 60px;"></td>
+                <td>Talla (m):</td>
+                <td><input type="number" name="talla" step="0.01" style="width: 60px;"></td>
+            </tr>
+            <tr>
+                <td>Temperatura (°C):</td>
+                <td><input type="number" name="temp" step="0.1" style="width: 60px;"></td>
+                <td>Presión Arterial:</td>
+                <td><input type="text" name="presion" placeholder="120/80" style="width: 60px;"></td>
+            </tr>
+            <tr>
+                <td>Oxigenación (%):</td>
+                <td colspan="3"><input type="number" name="oxi" min="0" max="100" style="width: 60px;"></td>
+            </tr>
+        </table>
+     </form>
+</body>
+</html>
